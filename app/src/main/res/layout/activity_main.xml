@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clGetInvitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:layout_marginRight="@dimen/dimen_20_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/tvGreetings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Good Morning!"
+            android:textStyle="bold"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/dimen_20_sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_18_sp"
+            android:layout_marginTop="@dimen/dimen_15_dp"
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintTop_toBottomOf="@+id/tvGreetings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/dimen_10_dp"
+            android:layout_marginEnd="@dimen/dimen_10_dp"
+            android:text="@string/text_invite_info"/>
+
+        <TextView
+            android:id="@+id/tvInvite"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_45_dp"
+            app:layout_constraintTop_toBottomOf="@id/tvInformation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="@dimen/dimen_8_dp"
+            android:layout_marginRight="@dimen/dimen_8_dp"
+            android:layout_marginTop="@dimen/dimen_15_dp"
+            android:paddingLeft="@dimen/dimen_25_dp"
+            android:paddingRight="@dimen/dimen_25_dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/text_Invite"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/round_corners_accent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSuccessfullyRegisteredLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        android:padding="@dimen/dimen_20_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/ivCongratulations"
+            android:layout_width="@dimen/dimen_200_dp"
+            android:layout_height="@dimen/dimen_200_dp"
+            android:layout_margin="@dimen/dimen_10_dp"
+            android:src="@drawable/ic_success"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivCongratulations"
+            android:layout_marginTop="@dimen/dimen_25_dp"
+            android:paddingLeft="@dimen/dimen_30_dp"
+            android:paddingRight="@dimen/dimen_30_dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/dimen_16_sp"
+            android:textColor="@color/primaryTextColor"
+            tools:hint="Congratulations Narsi! You are successfully registered for email invitations"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvCancelMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_cancel_invite"
+            android:layout_marginTop="@dimen/dimen_30_dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/dimen_14_sp"
+            android:paddingLeft="@dimen/dimen_30_dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName"
+            app:layout_constraintStart_toStartOf="@id/tvUserName"
+            app:layout_constraintEnd_toStartOf="@+id/tvCancelInvitation"/>
+
+        <TextView
+            android:id="@+id/tvCancelInvitation"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            app:layout_constraintTop_toTopOf="@id/tvCancelMsg"
+            app:layout_constraintBottom_toBottomOf="@id/tvCancelMsg"
+            app:layout_constraintStart_toEndOf="@id/tvCancelMsg"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingLeft="@dimen/dimen_25_dp"
+            android:paddingRight="@dimen/dimen_25_dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/button_cancel"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/round_corners_accent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

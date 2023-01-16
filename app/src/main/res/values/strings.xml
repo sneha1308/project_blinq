@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Project Broccoli</string>
+    <string name="text_hey_mate">Hey mate,</string>
+    <string name="text_invite_info">You would never like to miss any update? Here you go!</string>
+    <string name="text_Invite">Invite</string>
+    <string name="hint_userName">User name</string>
+    <string name="hint_emailId">Email Id</string>
+    <string name="hint_confirmEmailId">Confirm Email Id</string>
+    <string name="text_send">Send</string>
+    <string name="toast_msg_username">Oops! Username should not be empty or less than 3 characters</string>
+    <string name="toast_msg_valid_emailId">Please enter valid emailId</string>
+    <string name="toast_msg_valid_confirmEmailId">please enter valid confirm emailId</string>
+    <string name="toast_msg_validate_emailId">Confirm emailId is not same as emailId</string>
+    <string name="text_congrats_msg">Congratulations %1$s! You are successfully registered for email invitations.</string>
+
+    <string name="title_user_details">User Details</string>
+    <string name="text_successfully_registered">You are successfully registered for email invitations!</string>
+    <string name="text_dismiss">Dismiss</string>
+    <string name="text_cancel_invite">Do you wish to cancel invite?</string>
+    <string name="text_cancel_invitation_confirmation">Are you sure you want to cancel the invitations?</string>
+    <string name="dialog_title_cancel_invitation">Cancel Invitation</string>
+    <string name="text_successfully_cancelled">You are successfully cancelled the invitation!</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="log_error">Error</string>
+    <string name="toolbar_title_user_details">User Details</string>
+    <string name="dialog_positive_button">YES</string>
+    <string name="dialog_negative_button">NO</string>
+    <string name="something_went_wrong">Something went wrong. Please try again!</string>
+    <string name="toast_internet_connection">There might be server error or please check your internet connection</string>
+
+
+</resources>
